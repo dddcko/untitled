@@ -5,7 +5,7 @@ list = []
 for i in range(101,200):#遍历101-200
     bool = True   #定义一个布尔类型的变量，方便判断
     for j in range(2,i): #遍历2到这个数，用这个数循环%小于自己的所有正整数
-        if i%j==0:#判断能不能被整除，如果整除了，bool值变成false
+        if i%j==0:#判断能不能被整除，如果整除了，bool值变成false，则该数不是质数
             bool = False
     if(bool):#判断bool的值，如果是true 则该数为质数，加入到list中，如果是false，则不是质数，跳过添加直接进行下次循环
         list.append(i)
